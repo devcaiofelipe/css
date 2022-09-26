@@ -1,12 +1,14 @@
-body {
+.geral {
   /* Cor do texto */
   color: red;
-  /* alinhar o texto ao centro */
-  text-align: center;
   /* altura do elemento */
   height: 100px;
+  /* define a altura maxima do elemento */
+  max-height: 100px;
   /* largura do elemento */
   width: 100px;
+  /* define a largura maxima do elemento */
+  max-width: 100px;
   /* cor do background */
   background: red;
   /* caminho ou url da imagem para por no fundo do backas */
@@ -19,11 +21,10 @@ body {
   background-position: center;
 }
 
-body {
+.border {
   /* propriedades de borda.
     adiciona borda ao elemento, 
     tipos solid, dotted, dashed, double, groove, ridge, inset, outset, none, hidden
-    caso queria especificar um lado da borda, passe o lado (border-left, right etc...)
   */
   border: 1px solid black;
   border-left: 1px;
@@ -35,4 +36,56 @@ body {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.margin {
+  /* cria uma margem em branco no lado selecionado */
+  margin: 50px;
+  /* em sentido horario */
+  margin: 50px 50px 50px 50px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+
+.padding {
+  /* aumenta o espacamento interno do elemento */
+  padding: 50px;
+  /* sem sentido horario */
+  padding: 50px 50px 50px 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.text {
+  /* alinhar o texto ao centro 
+     mais comuns center, left, right, justify
+  */
+  text-align: center;
+  /* para alterar comportamentos no texto 
+    line-through -> texto riscado
+    none -> retira o sublinhado
+    overline -> sublinha em cima do texto
+    underline -> sublinha o texto
+  */
+  text-decoration: line-through;
+  /* alinha o texto ao centro */
+  text-align: center;
+  /* usado para formatar o texto
+    capitalize -> primeira letra maiuscula de cada palavra
+    uppercase -> tudo maiusculo
+    lowercase -> tudo minusculo
+  */
+  text-transform: capitalize;
+  /* aumenta uma quantidade de pixel ao inicio do paragrafo */
+  text-indent: 50px;
+  /* controla o espacamento das letras */
+  letter-spacing: 10px;
+  /* controla o espacamento entre as palavras do paragrafo */
+  word-spacing: 50px;
+  /* controla o espacamento entre as linhas, usa-se numero decimal */
+  line-height: 0.5;
 }
