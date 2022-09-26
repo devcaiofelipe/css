@@ -1,0 +1,7 @@
+* {
+  font-size: 50px;
+}
+
+body div section p, h1 {
+  background: blue;
+}
