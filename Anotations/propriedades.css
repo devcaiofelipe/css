@@ -1,0 +1,38 @@
+body {
+  /* Cor do texto */
+  color: red;
+  /* alinhar o texto ao centro */
+  text-align: center;
+  /* altura do elemento */
+  height: 100px;
+  /* largura do elemento */
+  width: 100px;
+  /* cor do background */
+  background: red;
+  /* caminho ou url da imagem para por no fundo do backas */
+  background-image: url(path/url);
+  /* tamanho da imagem no background se auto ajusta ou nao */
+  background-size: contain;
+  /* se o fundo vai se repetir ou nao */
+  background-repeat: no-repeat;
+  /* a posicao que a imagem vai ficar no fundo */
+  background-position: center;
+}
+
+body {
+  /* propriedades de borda.
+    adiciona borda ao elemento, 
+    tipos solid, dotted, dashed, double, groove, ridge, inset, outset, none, hidden
+    caso queria especificar um lado da borda, passe o lado (border-left, right etc...)
+  */
+  border: 1px solid black;
+  border-left: 1px;
+  border-right: 1px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

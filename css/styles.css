@@ -2,6 +2,8 @@
   font-size: 50px;
 }
 
-body div section p, h1 {
-  background: blue;
+h1 {
+  color: rgb(106, 111, 175);
+  border: 5px solid blue;
+  border-bottom-left-radius: 10px;
 }
