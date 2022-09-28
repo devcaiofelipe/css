@@ -9,6 +9,8 @@
   max-height: 100px;
   /* largura do elemento */
   width: 100px;
+  /* define o nivel de transparencia, vai de 0.1 a 1*/
+  opacity: 1;
   /* define a largura maxima do elemento */
   max-width: 100px;
   /* cor do background */
@@ -28,6 +30,17 @@
      -> cor da sombra
   */
   box-shadow: 2px 2px 10px black;
+  /* controla o conteudo do elemento caso saia do elemento 
+     hidden -> mostra apenas o conteudo que cabe dentro do elemento pai
+     scroll -> vai criar uma barra de rolagem dentro do elemento para que seja possivel ver todo conteudo
+     auto -> apenas cria o scroll caso seja necessario
+     ela só funciona, se especificar uma altura para o elemento
+  */
+  overflow: auto;
+  /* flutua o elemento para algum canto */
+  float: left;
+  /* limpa a flutuacao */
+  clear: both;
 }
 
 .border {
@@ -129,4 +142,21 @@
   */
   /* mais comuns sao block, inline, inline-block, none, flex, grid */
   display: block;
+}
+
+.position {
+  /* 
+  onde vc quer posicionar o elemento na tela 
+  usando ele voce libera as propriedades
+  z-index, bottom, right, left, top
+  relative -> baseado ao lugar que ele nasceu de origem, vc pode passar outras props
+  como left, right, bottom, top
+  fixed -> vai ficar static na posição que voce definir na tela
+  absolute -> vai ficar relativo ao elemento HTML pai
+  porem o elemento PAI precisa ter uma position diferente de static
+  se nao, ele irá procurar o elemento PAI do elemento PAI sucessivamente
+  e se alinhara baseado no primeiro que encontrar algum diferente de static
+  sticky -> fica grudada no elemento PAI se tiver barra de rolagem
+  */
+  position: fixed;
 }
